@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 body {
     margin-left: 8vw;
@@ -7,12 +7,12 @@ body {
     background-image: url("https://img.freepik.com/vetores-gratis/textura-de-papel-branco-artesanal_125540-947.jpg?w=740&t=st=1680132682~exp=1680133282~hmac=1b3964195edf53cfadff2e53f48d4b39e40747e5dc9fc9322d231bd3540f9a11");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -26,15 +26,25 @@ a:link {
     color: black;
 }
 
-a:hover {
-    opacity: 0.7;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+nav ul a:hover::after {
+    width: 100%;
 }
 
 #nav-lista {
@@ -47,17 +57,15 @@ nav {
     margin-left: 32px;
 }
 
-h2 {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 hr {
-    display: inline-block;
-    width: 837px; /* Defina a largura da barra horizontal conforme necessário */
     height: 1px;
     background-color: black;
-    margin-left: 10px; /* Defina a margem esquerda conforme necessário */
-    margin-right: 0px; /* Defina a margem direita conforme necessário */
-    vertical-align: middle;
+}
+
+iframe {
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 2%;
 }

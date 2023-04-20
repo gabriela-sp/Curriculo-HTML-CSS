@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 body {
     margin-left: 8vw;
@@ -11,9 +11,8 @@ body {
 }
 
 * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -27,15 +26,25 @@ a:link {
     color: black;
 }
 
-a:hover {
-    opacity: 0.7;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+nav ul a:hover::after {
+    width: 100%;
 }
 
 #nav-lista {
@@ -55,11 +64,11 @@ h2 {
 
 hr {
     display: inline-block;
-    width: 943px; /* Defina a largura da barra horizontal conforme necessário */
+    width: 943px;
     height: 1px;
     background-color: black;
-    margin-left: 10px; /* Defina a margem esquerda conforme necessário */
-    margin-right: 0px; /* Defina a margem direita conforme necessário */
+    margin-left: 10px;
+    margin-right: 0px;
     vertical-align: middle;
 }
 

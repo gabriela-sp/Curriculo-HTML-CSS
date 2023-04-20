@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+body {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background: #f3ecff;
+    background-image: url("https://img.freepik.com/vetores-gratis/textura-de-papel-branco-artesanal_125540-947.jpg?w=740&t=st=1680132682~exp=1680133282~hmac=1b3964195edf53cfadff2e53f48d4b39e40747e5dc9fc9322d231bd3540f9a11");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    font-family: "Fira Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+#nav-lista {
+    list-style: none;
+    display: flex;
+}
+
+#nav-lista li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+hr {
+    display: inline-block;
+    width: 870px;
+    height: 1px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+}
+
+div:not(#botoes){
+    margin-bottom: 1.2rem;
+    width: 48%;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.9rem;
+    width: 100%;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+
+#prototipo input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+#prototipo input:hover {
+    background-color: #e5e5e5;
+}
+
+#prototipo input::-webkit-file-upload-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+#prototipo input::-webkit-file-upload-button:hover {
+    background-color: #e5e5e5;
+}
+
+#botoes {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #808486;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    padding: 0.8rem;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: #a3a9b6;
+}
+
+#turno label {
+    margin:0;
+    display: block;
+}
+
+#turno input {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#turno span {
+    display: inline-block;
+}
+
+/*#turno label{
+    display: flex;
+}
+
+#turno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#turno label, input {
+    padding-right: 13px;
+}*/
+
+#radio{
+    display: block;
+    margin: 0;
+}
+
+#radio label, input{
+    margin: 0;
+}
+
+#radio label{
+    display: inline-block;
+    margin: 0;
+}
+
+#radio input{
+    margin-right: 13px;
+    display: inline-block;
+}
+
+#banco label{
+    margin: 0;
+}
+
+#horario input, #entrega input{
+    margin-left: 10px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
