@@ -61,34 +61,23 @@ nav ul a:hover::after {
     margin-left: 32px;
 }
 
-hr {
-    height: 1px;
-    background-color: black;
+#titulo {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    padding: 16px;
 }
-
+  
 h2 {
-    display: inline-block;
-    vertical-align: middle;
+    margin-right: auto;
 }
-
-#hr1 {
-    display: inline-block;
-    width: 852px;
-    height: 1px;
-    background-color: black;
+  
+hr {
+    flex-grow: 1;
+    height: 2px;
     margin-left: 10px;
-    margin-right: 0px;
-    vertical-align: middle;
-}
-
-#hr2 {
-    display: inline-block;
-    width: 774px;
-    height: 1px;
     background-color: black;
-    margin-left: 10px;
-    margin-right: 0px;
-    vertical-align: middle;
+    border: none;
 }
 
 table {

@@ -58,14 +58,14 @@ nav ul a:hover::after {
 }
 
 hr {
-    height: 1px;
+    height: 2px;
     background-color: black;
 }
 
 iframe {
     margin: auto;
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 2%;
 }

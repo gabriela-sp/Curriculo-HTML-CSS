@@ -113,32 +113,19 @@ h3 {
     text-align: justify;
 }
 
+#titulo {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+  
 h2 {
-    display: inline-block;
-    vertical-align: middle;
+    margin-right: 10px;
 }
-
-#hr1 {
-    display: inline-block;
-    width: 996px;
-    height: 1px;
-    background-color: black;
-    margin-left: 10px;
-    margin-right: 0px;
-    vertical-align: middle;
-}
-
-#hr2 {
-    display: inline-block;
-    width: 966px;
-    height: 1px;
-    background-color: black;
-    margin-left: 10px;
-    margin-right: 0px;
-    vertical-align: middle;
-}
-
+  
 hr {
-    height: 1px;
+    flex-grow: 1;
+    height: 2px;
     background-color: black;
+    border: none;
 }

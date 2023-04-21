@@ -23,9 +23,12 @@
         </nav>
     </header>
 
-    <fieldset>
+	<div id="titulo">
 		<h2>Formulário de Contato</h2>
-        <hr>
+		<hr>
+	</div>
+	
+    <fieldset>
 		<form id="contact-form" method="post" action="#" enctype="multipart/form-data">
 			<div id="nome">
 				<label for="first-name">Nome*</label>
@@ -97,7 +100,7 @@
 			</div>
 
             <div id="turno">
-				<label for="database">Turno para Reuniões</label>
+				<label for="database">Turno para Reuniões*</label>
 				<br>
 				<label>
 				  <input type="checkbox" name="turno" value="manha">
@@ -123,7 +126,7 @@
             </div>
 			<div id="entrega">    
                 <label>
-                    Previsão de entrega desejada:
+                    Previsão de entrega desejada*:
                     <input type="date" name="previsao" id="previsao">
                 </label>
             </div>

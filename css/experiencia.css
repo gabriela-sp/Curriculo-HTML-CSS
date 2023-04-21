@@ -56,17 +56,21 @@ nav ul a:hover::after {
     margin-left: 32px;
 }
 
-h2 {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-hr {
-    display: inline-block;
-    width: 837px;
-    height: 1px;
-    background-color: black;
-    margin-left: 10px;
+#titulo {
+    display: flex;
+    align-items: center;
     margin-right: 0px;
-    vertical-align: middle;
+    padding: 16px;
+}
+  
+h2 {
+    margin-right: auto;
+}
+  
+hr {
+    flex-grow: 1;
+    height: 2px;
+    margin-left: 10px;
+    background-color: black;
+    border: none;
 }
